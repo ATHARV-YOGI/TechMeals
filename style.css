@@ -80,7 +80,7 @@ body{
 }
 #home::before{
     content: "";
-    background: url("homeimage.jpg")  no-repeat center/cover ;
+    background: url(homeimage.jpg)  no-repeat center/cover ;
     position: absolute;
     height: 100%;
     width: 100%;
