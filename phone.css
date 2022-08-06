@@ -8,7 +8,7 @@
     padding: 4px;}
 /* home section */
 #home{
-    height: 400px;
+    height: 250px;
     padding: 10px 50px;
 }
 
@@ -49,6 +49,10 @@
 
 #contact-box form {
     width: 50%;
+}
+
+#contact::before{
+    height:90%;
 }
 
 
