@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(72, 67, 67);
+  
+}
+    
+     /* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#logo{
+    margin: 10px 30px;
+   
+}
+#logo img{
+    height: 70px;
+    margin: 3px 6px;
+}
+    /* navigation bar : list styling */
+
+#navbar ul{
+    display: flex;   
+}
+
+
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.3rem;
+    
+        
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background: white;
+}
+
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 300px;
+    height: 665px;
+
+
+}
+#home::before{
+    content: "";
+    background: url("../homeimage.jpg")  no-repeat center/cover ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+
+
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+
+
+#home p{
+    color: white;
+    font-size: 1rem;
+}
+
+  /* section section */
+
+
+  #service-container{
+    margin-top: 130px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuFABA5aRcaWsUWzGYkWM-ac0pMQ3E9K2onw&usqp=CAU) no-repeat center/cover;
+    
+  }
+
+  #services{
+    display: flex;
+    
+    margin: 30px;
+    
+  }
+    
+    
+  #services .box1{
+   
+    border: 2px solid black;
+    margin: 25px;
+    padding: 40px;
+    border-radius: 5px;
+    color: white;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV2qHglOYZ5mAXcQa0uLV3FqP3WESLvcQJ6g&usqp=CAU") no-repeat center center/cover  ;  
+    
+    
+  }
+  
+ 
+  #services .box2{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIutF46YMbx6tTrxDww1bN6Q75WKNgCpcSUw&usqp=CAU) no-repeat center center/cover;    
+    border: 2px solid black;
+    margin: 25px;
+    padding: 40px;
+    border-radius: 5px;
+    color: yellow;
+    
+    
+  }
+  #services .box3{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJRMePObQD0DDJuDQm9Enf58DmK2nbFmgnA&usqp=CAU) no-repeat center center/cover;    
+    border: 2px solid black;
+    margin: 25px;
+    padding: 40px;
+    border-radius: 5px;
+    color: white;
+    
+  }
+  
+  
+
+  /* client section */
+
+
+  #client-section{
+    height: 44px;
+    color: white;
+
+
+  }
+
+  .clients{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+  }
+
+
+  .clients img{
+    height: 200px;
+    padding: 20px;
+  }
+
+
+  #client-section::before{
+    content: "";
+    position: absolute;
+    background: black;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+  }
+
+  /* contact section  */
+
+  #contact{
+    
+    margin-top: 450px;
+
+  }
+  
+
+  #contact::before{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url("https://media.istockphoto.com/photos/contact-us-icons-on-wooden-block-shapes-picture-id1366352706?b=1&k=20&m=1366352706&s=170667a&w=0&h=MvkDrTS1H-aq5TgEhtrZalaNWOT22IL7HwBUiywykRw=" ) no-repeat center center/cover;
+  }
+
+  #contact-box{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+  }
+
+#contact-box input,#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#contact-box form{
+  width: 30%;
+  
+}
+
+#contact-box label{
+  font-size: 1.3rem;
+}
+  footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top:70px;
+  }
+
+   /* Utility Classes */
+
+
+  .h-primary{
+    font-size: 3rem;
+    padding: 20px;
+  } 
+  
+
+  .h-secondary{
+    font-size: 2rem;
+    padding: 10px;
+
+  }
+
+  .btn{
+    padding: 5px 10px;
+    margin: 20px;
+    background-color: grey;
+    border: solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    background-color: green;
+  }
+  
+
+  .center{
+    text-align: center;
+  }
+ 
