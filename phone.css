@@ -11,6 +11,9 @@
     height: 250px;
     padding: 10px 10px;
 }
+#home h1{
+    margin-top: 50%;
+}
 
 #home p{
     font-size: 13px;
